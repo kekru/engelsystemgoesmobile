@@ -19,6 +19,7 @@ angular.module('core.service', [])
      * show login modal to sign in user and get api_key
      */
     var showDialog = function () {
+      var self = this;
       var $scope = $rootScope.$new();// scope for dialog
 
       $scope.user = {};
@@ -32,7 +33,7 @@ angular.module('core.service', [])
 
       $scope.submit_form = function (form) {
         if (form.$valid) {
-          authenticate($scope.user.nick, $scope.user.password)
+          self.authenticate($scope.user.nick, $scope.user.password)
             .then(function () {
               $scope.modal.hide();
             }, function () {
