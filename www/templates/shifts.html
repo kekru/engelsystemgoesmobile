@@ -1,0 +1,11 @@
+<ion-view view-title="Shifts">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="shift in shifts">
+        <h2>{{shift.name}}</h2>
+        <p>{{shift.start*1000 | date: 'dd.MM.yyyy HH:mm'}} - {{shift.end*1000 | date: 'HH:mm'}}</p>
+        <p>Raum: {{shift.room_name}}</p>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

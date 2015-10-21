@@ -1,0 +1,18 @@
+<ion-modal-view>
+  <ion-header-bar>
+    <h1 class="title">Login Modal</h1>
+  </ion-header-bar>
+  <ion-content>
+    <form name="loginForm" novalidate ng-submit="submit_form(loginForm);">
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Nick</span>
+        <input type="text" placeholder="Nick" ng-model="user.nick" ng-required="">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Password</span>
+        <input type="password" placeholder="Password" ng-model="user.password" ng-required="">
+      </label>
+      <button type="submit" value="Login" class="button button-full button-positive">Login</button>
+    </form>
+  </ion-content>
+</ion-modal-view>
