@@ -19,4 +19,4 @@ If you are behind a corporate proxy ... good look ...
 
 To do a bit like TDD I build tests. You can rum them with `karma start`. In a future version it would be integrated into jenkins!  
 
-Travis CI is ready :) Look here for how to add it to the welcomehelp/engelsystemgoesmobile
+Travis CI is ready :) Look [here](https://github.com/kekru/engelsystem/blob/fhmuc-tool/test/README.md) for how to add it to the welcomehelp/engelsystemgoesmobile 
