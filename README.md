@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/kekru/engelsystemgoesmobile.svg?branch=master)](https://travis-ci.org/kekru/engelsystemgoesmobile)  
 This is a mobile fork for the [welcomehelpde / engelsystem](https://github.com/welcomehelpde/engelsystem).
 
 # Installation
@@ -16,4 +17,6 @@ If you are behind a corporate proxy ... good look ...
 
 # Tests
 
-To do a bit like TDD I build tests. You can rum them with `karma start`. In a future version it would be integrated into jenkins!
+To do a bit like TDD I build tests. You can rum them with `karma start`. In a future version it would be integrated into jenkins!  
+
+Travis CI is ready :) Look here for how to add it to the welcomehelp/engelsystemgoesmobile
