@@ -70,6 +70,6 @@ module.exports = function(config) {
 		'karma-coverage',
 		'karma-chrome-launcher',
 		'karma-firefox-launcher',
-	],
+	]
   });
 };
