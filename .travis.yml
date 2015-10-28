@@ -2,7 +2,9 @@ language: node_js
 node_js:
   - "0.10"
 
-script: node_modules/karma/bin/karma start karma.conf.js --browsers sl_chrome
+script:
+  - "./node_modules/bower/bin/bower install --dev"
+  - "./node_modules/karma/bin/karma start karma.conf.js --browsers sl_chrome"
 
 before_install:
   - export DISPLAY=:99.0
