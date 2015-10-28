@@ -1,11 +1,9 @@
 language: node_js
+script:
+  - "npm run travis"
+  - "npm run browserify:tests"
+  - "node_modules/karma/bin/karma start karma.conf.js --browsers FIREFOX_V4,FIREFOX_V11,FIREFOX_V20,FIREFOX_V35"
+  - "node_modules/karma/bin/karma start karma.conf.js --browsers CHROME_V35,CHROME_V40,ANDROID_V4.0,ANDROID_V4.3"
+  - "node_modules/karma/bin/karma start karma.conf.js --browsers INTERNET_EXPLORER_V9,INTERNET_EXPLORER_V10,INTERNET_EXPLORER_V11"
 node_js:
   - "0.10"
-
-script:
-  - "./node_modules/bower/bin/bower install --dev"
-  - "./node_modules/karma/bin/karma start karma.conf.js --browsers sl_chrome"
-
-before_install:
-  - export DISPLAY=:99.0
-  - sh -e /etc/init.d/xvfb start
