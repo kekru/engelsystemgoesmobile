@@ -1,6 +1,6 @@
 language: node_js
 script:
-  - "node_modules/karma/bin/karma start karma.conf.js --single-run --browsers PhantomJS"
+  - "node_modules/karma/bin/karma start karma.conf.js --single-run --browsers Firefox"
 
 node_js:
   - "0.10"
